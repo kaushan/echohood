@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Quelle chanson de {{artist}} êtes-vous ?",
+  "general": {
+    "getStarted": "Commencer",
+    "trending": "Tendances",
+    "youAre": "Vous êtes la chanson",
+    "by": "de {{artist}}",
+    "last7Days": "7 derniers jours",
+    "last30Days": "30 derniers jours",
+    "allTime": "Tout le temps",
+    "request": "Demander",
+    "save": "Enregistrer",
+    "title": "Quiz musicaux",
+    "description": "Plongez dans le rythme de la découverte de soi avec nos quiz musicaux captivants ! Que vous soyez fan de classiques émouvants, de tubes pop ou de rythmes indie, il y a un quiz pour chacun. Explorez votre identité musicale et découvrez quelle chanson de votre artiste préféré vous représente le mieux.",
+    "newsletter": {
+      "headline": "Restez informé",
+      "description": "Recevez des mises à jour hebdomadaires sur les derniers quiz, idées et ressources conçus spécialement pour vous.",
+      "emailPlaceholder": "Adresse e-mail",
+      "subscribe": "S'abonner",
+      "headlines": [
+        "Rejoignez notre communauté de quiz musicaux et restez à jour.",
+        "Faites partie d'une communauté qui célèbre la musique et les quiz.",
+        "Abonnez-vous pour vous connecter avec d'autres passionnés de musique.",
+        "Recevez des mises à jour exclusives et participez à la conversation sur les quiz musicaux.",
+        "Restez connecté avec des amateurs de musique et découvrez de nouveaux quiz.",
+        "Rejoignez un espace où musique et quiz rassemblent les gens.",
+        "Abonnez-vous pour faire partie d'une communauté croissante de passionnés de musique.",
+        "Soyez le premier informé et connectez-vous avec des amis amateurs de quiz.",
+        "Rejoignez-nous pour explorer des quiz musicaux et rencontrer des fans partageant vos goûts.",
+        "Abonnez-vous pour rejoindre un espace accueillant pour les amateurs de musique et de quiz."
+      ]
+    }
+  }
+}

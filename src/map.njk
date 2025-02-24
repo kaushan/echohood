@@ -1,0 +1,68 @@
+---
+title: EchoHood
+description: Every place has a story to tell
+layout: layouts/base.njk
+---
+<div x-data="audioPlayer()">
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Explore the World</h2>
+    <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Select your destination to connect with a native guide and experience authentic local adventures.</p>
+  </div>
+</div>
+{% include 'landmarks.njk' %}
+</div>
+<script> 
+    function audioPlayer() {
+        return {
+            createDescription(location) {
+                console.log('Selecting destination...');
+                console.log(location);
+                // redicret to /?location=destination
+                window.location.href = `/?location=${location.name}` ;
+            },
+            landmarks: [
+                {
+                "name": "Paris",
+                "description": "The capital of France, known for its art, fashion, gastronomy, and culture."
+                },
+                {
+                "name": "Tokyo",
+                "description": "Japan's bustling capital, a mix of ultramodern and traditional with neon-lit skyscrapers and historic temples."
+                },
+                {
+                "name": "New York City",
+                "description": "A global hub for finance, culture, and entertainment, home to Times Square, Central Park, and Broadway."
+                },
+                {
+                "name": "Dubai",
+                "description": "A futuristic city in the UAE known for its luxury shopping, ultramodern architecture, and vibrant nightlife."
+                },
+                {
+                "name": "Rome",
+                "description": "Italy's historic capital, rich in ancient history, art, and architecture, including the Vatican and Colosseum."
+                },
+                {
+                "name": "London",
+                "description": "The capital of England, known for its royal heritage, museums, and world-famous landmarks like Big Ben."
+                },
+                {
+                "name": "Bali",
+                "description": "An Indonesian paradise island famous for its beaches, rice terraces, and spiritual culture."
+                },
+                {
+                "name": "Rio de Janeiro",
+                "description": "Brazil’s vibrant coastal city, home to the Christ the Redeemer statue and stunning beaches."
+                },
+                {
+                "name": "Santorini",
+                "description": "A Greek island famous for its whitewashed buildings, breathtaking sunsets, and blue-domed churches."
+                },
+                {
+                "name": "Kyoto",
+                "description": "Japan’s cultural heart, known for its classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses."
+                }
+            ]
+        }
+    }
+</script>

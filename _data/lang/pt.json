@@ -1,0 +1,22 @@
+{
+  "titleTemplate": "Qual música de {{artist}} você é?",
+  "general": {
+    "getStarted": "Começar",
+    "trending": "Tendências",
+    "youAre": "Você é a música",
+    "by": "de {{artist}}",
+    "last7Days": "Últimos 7 dias",
+    "last30Days": "Últimos 30 dias",
+    "allTime": "Todo o tempo",
+    "request": "Solicitar",
+    "save": "Salvar",
+    "title": "Quizzes musicais",
+    "description": "Mergulhe no ritmo da autodescoberta com nossos envolventes quizzes musicais! Seja você fã de clássicos emocionantes, sensações pop ou batidas indie, há um quiz para todos. Explore sua identidade musical e descubra qual música do seu artista favorito melhor representa você.",
+    "newsletter": {
+      "headline": "Fique por dentro",
+      "description": "Receba atualizações semanais sobre os últimos quizzes, insights e recursos feitos sob medida para você.",
+      "emailPlaceholder": "Endereço de e-mail",
+      "subscribe": "Inscrever-se"
+    }
+  }
+}

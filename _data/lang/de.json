@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Welches Lied von {{artist}} bist du?",
+  "general": {
+    "getStarted": "Loslegen",
+    "trending": "Im Trend",
+    "youAre": "Du bist der Song",
+    "by": "von {{artist}}",
+    "last7Days": "Letzte 7 Tage",
+    "last30Days": "Letzte 30 Tage",
+    "allTime": "Alle Zeiten",
+    "request": "Anfragen",
+    "save": "Speichern",
+    "title": "Musik-Quiz",
+    "description": "Tauche ein in den Rhythmus der Selbstentdeckung mit unseren spannenden Musik-Quizzes! Ob du ein Fan von gefühlvollen Klassikern, Pop-Hits oder Indie-Beats bist – hier ist für jeden etwas dabei. Erforsche deine musikalische Identität und finde heraus, welches Lied deines Lieblingskünstlers am besten zu dir passt.",
+    "newsletter": {
+      "headline": "Bleib auf dem Laufenden",
+      "description": "Erhalte wöchentliche Updates zu den neuesten Quizzes, Einblicken und Ressourcen – speziell für dich zusammengestellt.",
+      "emailPlaceholder": "E-Mail-Adresse",
+      "subscribe": "Abonnieren",
+      "headlines": [
+        "Werde Teil unserer Musik-Quiz-Community und bleib auf dem Laufenden.",
+        "Sei Teil einer Community, die Musik und Quizzes feiert.",
+        "Abonniere und verbinde dich mit anderen Musikfans.",
+        "Erhalte exklusive Updates und werde Teil der Musik-Quiz-Gespräche.",
+        "Bleib verbunden mit Musikliebhabern und entdecke neue Quizzes.",
+        "Tritt einem Raum bei, in dem Musik und Quizzes Menschen zusammenbringen.",
+        "Abonniere, um Teil einer wachsenden Gemeinschaft von Musikbegeisterten zu werden.",
+        "Sei der Erste, der Neues erfährt, und finde quizbegeisterte Freunde.",
+        "Schließe dich uns an, um Musik-Quizzes zu erkunden und Gleichgesinnte zu treffen.",
+        "Abonniere, um Teil eines einladenden Ortes für Musik- und Quizliebhaber zu werden."
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Qué canción de {{artist}} eres?",
+  "general": {
+    "getStarted": "Comenzar",
+    "trending": "Tendencias",
+    "youAre": "Eres la canción",
+    "by": "de {{artist}}",
+    "last7Days": "Últimos 7 días",
+    "last30Days": "Últimos 30 días",
+    "allTime": "Todo el tiempo",
+    "request": "Petición",
+    "save": "Guardar",
+    "title": "Cuestionarios de música",
+    "description": "Sumérgete en el ritmo del autodescubrimiento con nuestros atractivos cuestionarios de música. Si eres fanático de los clásicos conmovedores, las sensaciones pop, o los ritmos indie, hay un cuestionario para todos. Explora tu identidad musical y descubre qué canción de tu artista favorito mejor te representa.",
+    "newsletter": {
+      "headline": "Mantente al tanto",
+      "description": "Recibe actualizaciones semanales sobre los últimos cuestionarios, perspectivas y recursos hechos a tu medida.",
+      "emailPlaceholder": "Dirección de correo electrónico",
+      "subscribe": "Suscribirse",
+      "headlines": [
+        "Únete a nuestra comunidad de cuestionarios de música y mantente informado.",
+        "Sé parte de una comunidad que celebra la música y los cuestionarios.",
+        "Suscríbete para conectar con otros que comparten tu amor por la música.",
+        "Obtén actualizaciones exclusivas y únete a la conversación sobre cuestionarios de música.",
+        "Mantente conectado con los amantes de la música y descubre nuevos cuestionarios.",
+        "Únete a un espacio donde la música y los cuestionarios unen a las personas.",
+        "Suscríbete para ser parte de una comunidad creciente de entusiastas de la música.",
+        "Sé el primero en enterarte y conéctate con amigos amantes de los cuestionarios.",
+        "Únete a nosotros para explorar cuestionarios de música y conectar con fanáticos afines.",
+        "Suscríbete para unirte a un espacio acogedor para los amantes de la música y los cuestionarios."
+      ]
+    }
+  }
+}

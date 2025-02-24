@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Qual é a música de {{artist}} que você é?",
+  "general": {
+    "getStarted": "Começar",
+    "trending": "Em alta",
+    "youAre": "Você é a música",
+    "by": "de {{artist}}",
+    "last7Days": "Últimos 7 dias",
+    "last30Days": "Últimos 30 dias",
+    "allTime": "Todo o tempo",
+    "request": "Solicitar",
+    "save": "Salvar",
+    "title": "Quizzes musicais",
+    "description": "Mergulhe no ritmo da autodescoberta com nossos envolventes quizzes musicais! Se você é fã de clássicos emocionantes, sensações pop ou batidas indie, há um quiz para todos. Explore sua identidade musical e descubra qual música de seu artista favorito melhor representa você.",
+    "newsletter": {
+      "headline": "Fique por dentro",
+      "description": "Receba atualizações semanais sobre os últimos quizzes, insights e recursos feitos especialmente para você.",
+      "emailPlaceholder": "Endereço de e-mail",
+      "subscribe": "Inscrever-se",
+      "headlines": [
+        "Junte-se à nossa comunidade de quizzes musicais e fique por dentro.",
+        "Faça parte de uma comunidade que celebra música e quizzes.",
+        "Inscreva-se para se conectar com outros que compartilham seu amor pela música.",
+        "Receba atualizações exclusivas e participe da conversa sobre quizzes musicais.",
+        "Mantenha-se conectado com amantes da música e descubra novos quizzes.",
+        "Junte-se a um espaço onde música e quizzes unem as pessoas.",
+        "Inscreva-se para fazer parte de uma crescente comunidade de entusiastas da música.",
+        "Seja o primeiro a saber e conectar-se com amigos que amam quizzes.",
+        "Junte-se a nós para explorar quizzes musicais e conectar-se com fãs que pensam da mesma forma.",
+        "Inscreva-se para se juntar a um espaço acolhedor para amantes de música e quizzes."
+      ]
+    }
+  }
+}

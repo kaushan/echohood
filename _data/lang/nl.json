@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Welk nummer van {{artist}} ben jij?",
+  "general": {
+    "getStarted": "Begin",
+    "trending": "Trending",
+    "youAre": "Je bent het nummer",
+    "by": "door {{artist}}",
+    "last7Days": "Laatste 7 dagen",
+    "last30Days": "Laatste 30 dagen",
+    "allTime": "Altijd",
+    "request": "Verzoek",
+    "save": "Opslaan",
+    "title": "Muziekquizzen",
+    "description": "Duik in het ritme van zelfontdekking met onze boeiende muziekquizzen! Of je nu een fan bent van soulvolle klassiekers, pop sensaties, of indie beats, er is voor ieder wat wils. Ontdek jouw muzikale identiteit en ontdek welk nummer van je favoriete artiest het beste bij je past.",
+    "newsletter": {
+      "headline": "Blijf op de hoogte",
+      "description": "Ontvang wekelijkse updates over de nieuwste quizzen, inzichten en bronnen die speciaal voor jou zijn samengesteld.",
+      "emailPlaceholder": "E-mailadres",
+      "subscribe": "Inschrijven",
+      "headlines": [
+        "Word lid van onze muziekquizgemeenschap en blijf op de hoogte.",
+        "Maak deel uit van een gemeenschap die muziek en quizzen viert.",
+        "Schrijf je in om in contact te komen met anderen die jouw liefde voor muziek delen.",
+        "Ontvang exclusieve updates en doe mee aan het muziekkwizgesprek.",
+        "Blijf in contact met muziekliefhebbers en ontdek nieuwe quizzen.",
+        "Word lid van een plek waar muziek en quizzen mensen samenbrengen.",
+        "Schrijf je in om deel uit te maken van een groeiende gemeenschap van muziekliefhebbers.",
+        "Wees de eerste die het weet en maak contact met quizminnende vrienden.",
+        "Doe met ons mee om muziekquizzen te verkennen en contact te leggen met gelijkgestemde fans.",
+        "Schrijf je in om deel uit te maken van een gastvrije omgeving voor muziek- en quizliefhebbers."
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Jaką piosenką {{artist}} jesteś?",
+  "general": {
+    "getStarted": "Zacznij",
+    "trending": "Trendy",
+    "youAre": "Jesteś piosenką",
+    "by": "{{artist}}",
+    "last7Days": "Ostatnie 7 dni",
+    "last30Days": "Ostatnie 30 dni",
+    "allTime": "Wszystkie czasy",
+    "request": "Zgłoś",
+    "save": "Zapisz",
+    "title": "Quizy muzyczne",
+    "description": "Zanurz się w rytmie odkrywania siebie dzięki naszym angażującym quizom muzycznym! Niezależnie od tego, czy jesteś fanem klasyków, popowych hitów, czy indie brzmień, znajdziesz coś dla siebie. Odkryj swoją muzyczną tożsamość i dowiedz się, która piosenka twojego ulubionego artysty najlepiej Cię reprezentuje.",
+    "newsletter": {
+      "headline": "Bądź na bieżąco",
+      "description": "Otrzymuj cotygodniowe aktualizacje na temat najnowszych quizów, inspiracji i zasobów stworzonych specjalnie dla Ciebie.",
+      "emailPlaceholder": "Adres e-mail",
+      "subscribe": "Subskrybuj",
+      "headlines": [
+        "Dołącz do naszej społeczności quizów muzycznych i bądź na bieżąco.",
+        "Stań się częścią społeczności, która świętuje muzykę i quizy.",
+        "Subskrybuj, aby połączyć się z innymi miłośnikami muzyki.",
+        "Otrzymuj ekskluzywne aktualizacje i dołącz do rozmowy o quizach muzycznych.",
+        "Pozostań w kontakcie z miłośnikami muzyki i odkrywaj nowe quizy.",
+        "Dołącz do przestrzeni, gdzie muzyka i quizy łączą ludzi.",
+        "Subskrybuj, aby być częścią rosnącej społeczności pasjonatów muzyki.",
+        "Bądź pierwszym, który się dowie i połącz się z przyjaciółmi kochającymi quizy.",
+        "Dołącz do nas, aby odkrywać quizy muzyczne i spotkać fanów o podobnych zainteresowaniach.",
+        "Subskrybuj, aby dołączyć do przyjaznej przestrzeni dla miłośników muzyki i quizów."
+      ]
+    }
+  }
+}

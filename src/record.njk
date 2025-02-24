@@ -1,0 +1,71 @@
+---
+title: EchoHood
+description: Every place has a story to tell
+layout: layouts/base.njk
+---
+
+    <div x-data="audioRecorder()">
+        <p>Press and hold <strong>SPACE</strong> to record.</p>
+        <p x-show="isRecording" class="text-red-500">Recording...</p>
+        <audio x-ref="audioPlayer" controls x-show="audioUrl"></audio>
+        <br>
+        <a x-bind:href="audioUrl" x-bind:download="audioFileName" x-show="audioUrl">
+            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Download Recording</button>
+        </a>
+    </div>
+
+    <script>
+        function audioRecorder() {
+            return {
+                isRecording: false,
+                audioUrl: null,
+                audioFileName: "recording.wav",
+                mediaRecorder: null,
+                audioChunks: [],
+                async init() {
+                    try {
+                        this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        this.mediaRecorder = new MediaRecorder(this.stream);
+                        this.mediaRecorder.ondataavailable = (event) => this.audioChunks.push(event.data);
+                        this.mediaRecorder.onstop = this.createAudioFile;
+
+                        document.addEventListener("keydown", (event) => this.startRecording(event));
+                        document.addEventListener("keyup", (event) => this.stopRecording(event));
+
+                        console.log("Microphone access granted.");
+                    } catch (error) {
+                        console.error("Error accessing microphone:", error);
+                    }
+                },
+                startRecording(event) {
+                    if (event.code === "Space" && !this.isRecording) {
+                        if (!this.mediaRecorder) {
+                            console.error("MediaRecorder is not initialized.");
+                            return;
+                        }
+                        this.isRecording = true;
+                        this.audioChunks = [];
+                        this.mediaRecorder.start();
+                        console.log("Recording started.");
+                    }
+                },
+                stopRecording(event) {
+                    if (event.code === "Space" && this.isRecording) {
+                        if (!this.mediaRecorder) {
+                            console.error("MediaRecorder is not initialized.");
+                            return;
+                        }
+                        this.isRecording = false;
+                        this.mediaRecorder.stop();
+                        console.log("Recording stopped.");
+                    }
+                },
+                createAudioFile() {
+                    const audioBlob = new Blob(this.audioChunks, { type: "audio/wav" });
+                    this.audioUrl = URL.createObjectURL(audioBlob);
+                    this.$refs.audioPlayer.src = this.audioUrl;
+                    console.log("Audio file created.");
+                }
+            };
+        }
+    </script>

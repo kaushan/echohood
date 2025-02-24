@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "Bạn là bài hát nào của {{artist}}?",
+  "general": {
+    "getStarted": "Bắt đầu",
+    "trending": "Xu hướng",
+    "youAre": "Bạn là bài hát",
+    "by": "của {{artist}}",
+    "last7Days": "7 ngày qua",
+    "last30Days": "30 ngày qua",
+    "allTime": "Mọi lúc",
+    "request": "Yêu cầu",
+    "save": "Lưu",
+    "title": "Câu đố âm nhạc",
+    "description": "Khám phá nhịp điệu của sự tự khám phá với các câu đố âm nhạc hấp dẫn của chúng tôi! Dù bạn là người yêu thích những bản nhạc cổ điển đầy cảm xúc, những nhạc pop đầy cảm hứng, hay những giai điệu độc lập, đều có một câu đố dành cho bạn. Khám phá bản sắc âm nhạc của bạn và lộ diện bài hát nào của nghệ sĩ yêu thích đại diện tốt nhất cho bạn.",
+    "newsletter": {
+      "headline": "Luôn cập nhật",
+      "description": "Nhận cập nhật hàng tuần về các câu đố mới nhất, thông tin chi tiết và tài nguyên được tùy chỉnh cho bạn.",
+      "emailPlaceholder": "Địa chỉ email",
+      "subscribe": "Đăng ký",
+      "headlines": [
+        "Tham gia cộng đồng câu đố âm nhạc của chúng tôi và luôn cập nhật.",
+        "Là một phần của cộng đồng tôn vinh âm nhạc và câu đố.",
+        "Đăng ký để kết nối với những người khác cùng yêu thích âm nhạc.",
+        "Nhận các cập nhật độc quyền và tham gia trò chuyện về câu đố âm nhạc.",
+        "Luôn kết nối với những người yêu nhạc và khám phá các câu đố mới.",
+        "Tham gia một không gian nơi âm nhạc và câu đố kết nối mọi người.",
+        "Đăng ký để trở thành một phần của cộng đồng ngày càng lớn của những người đam mê âm nhạc.",
+        "Là người đầu tiên biết và kết nối với những người bạn yêu câu đố.",
+        "Tham gia cùng chúng tôi để khám phá các câu đố âm nhạc và kết nối với các người hâm mộ cùng chí hướng.",
+        "Đăng ký để tham gia vào một không gian chào đón cho những người yêu thích âm nhạc và câu đố."
+      ]
+    }
+  }
+}

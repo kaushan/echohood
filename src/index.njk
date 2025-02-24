@@ -1,8 +1,181 @@
 ---
-title: YATAS
-description: Yet Another Tailwind Alpine Starter Project for 11ty!
+title: EchoHood
+description: Every place has a story to tell
 layout: layouts/base.njk
 ---
-<div class="flex items-center justify-center w-full min-h-screen" x-init="console.log('Hello from Alpine.js')">
-  <img src="img/logo.svg" class="w-1/3 h-auto max-w-full" width="220" height="150" alt="YATAS Logo" />
+<div x-data="audioPlayer()">
+{% include 'nav.njk' %}
+{% include 'hero.njk' %}
+
+{# {% include 'theme.njk' %} #}
+
+<div  class="flex items-center justify-center w-full mb-32">
+    <div>
+      <div class="flex items-center justify-center">
+          {# <div> echotour  </div>
+          <button @click="playAudio()">Play Audio</button> #}
+
+        {% include 'play.njk' %}
+      </div>
+      {% include 'landmarks.njk' %}
+    </div>
 </div>
+
+
+  <script>
+function audioPlayer() {
+    return {
+        audioUrl: null,
+        audio: null,
+        isPlaying: false,
+        text: null,
+        location: null,
+        landmarks: [],
+        thevoice : null,
+        loading : false,
+        lang: 'english',
+        async init() {
+          this.thevoice = this.voices[0]
+          
+          const urlParams = new URLSearchParams(window.location.search);
+          const lang = urlParams.get('lang');
+          if (lang) {
+            this.lang = lang;
+          }
+          console.log(this.lang); 
+          const location = urlParams.get('location');
+          if (location) {
+            this.location = location;
+            this.createLandmarks();
+          }
+
+        },
+        async createDescription(item) {
+          this.loading = true;
+          console.log(item);
+          
+          const name = item.name // 'Plaza Hotel';
+          const address = item.description // '768 5th Ave, New York, NY 10019';
+          const prompt = `Provide a short, around 50 words, use ${this.lang} language, informative description that can be used as auido guide/tour for the following location:\n\nName: ${name}\nAddress: ${address}\n\nDescription:`;
+          console.log(prompt);
+
+          this.text = await getMistralAIResponse(prompt);
+          console.log(this.text);
+          this.playAudio();
+        },
+        async playAudio() {
+            this.loading = true;
+            this.audioUrl = await generateSpeech(this.text, this.thevoice.id);
+            
+            if (this.audioUrl) {
+                {# const audio = new Audio(this.audioUrl);
+                audio.play(); #}
+                this.loading = false;
+                this.toggleAudio();
+            } else {
+                alert('Audio is not ready yet.');
+            }
+        }, 
+        selectLocation(name) {
+          this.location = name;
+          console.log(name);
+          this.createLandmarks();
+        },
+        async createLandmarks() {
+          this.loading = true;
+          name = this.location;
+          console.log('generating for ', name);
+          const promt = `Generate a JSON list of notable landmarks for the location I provide. Stay hyperlocal.  Each landmark should have the following structure:
+
+              "initials": A short abbreviation or initials (2-4 letters) derived from the landmark's name.
+
+              "name": The full, official name of the landmark.
+
+              "description": The landmark's  street address or its most commonly known location.
+
+              Example output structure:
+
+              {
+              "title": "[Location Name] Landmarks",
+              "landmarks": [
+              {
+              "initials": "[Initials]",
+              "name": "[Landmark Name]",
+              "description": "[Landmark Address or Location]"
+              },
+              ...
+              ]
+              }
+              
+              Generate 6 landmarks and return only the JSON
+              Please generate the JSON list for this specific location: ${name}.`;
+
+          res = await getMistralAIResponse(promt, 1000);
+          console.log(res);
+          console.log(res.landmarks);
+          obj = JSON.parse(res);
+          this.landmarks = obj.landmarks;
+          this.loading = false;
+        },
+        async toggleAudio() {
+            if (this.isPlaying) {
+                this.audio.pause();
+                this.audio.currentTime = 0;
+                this.isPlaying = false;
+            } else {
+                if (!this.audioUrl) {
+                    this.audioUrl = await generateSpeech(this.text);
+                }
+
+                if (this.audioUrl) {
+                    if (!this.audio) {
+                        this.audio = new Audio(this.audioUrl);
+                        this.audio.addEventListener('ended', () => {
+                            this.isPlaying = false;
+                        });
+                    }
+                    this.audio.play();
+                    this.isPlaying = true;
+                } else {
+                    alert('Audio is not ready yet.');
+                }
+            }
+        }, 
+        voices: [
+  {
+    "id": 'fFEdjRYjm0g861eu6r3F',
+    "name": "Franklin D. Roosevelt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/FDR_1944_Color_Portrait.jpg"
+  },
+  {
+    "id": "JBFqnCBsd6RMkjVDRZzb",
+    "name": "Martin Luther King Jr.",
+    "image": "https://www.uncsa.edu/chancellor/communications/img/martin-luther-king-jr.jpg"
+  },
+  {
+    "id": '9BWtsMINqrJLrRacOk9x',
+    "name": "Susan B. Anthony",
+    "image": "https://cdn.britannica.com/28/13428-050-37CEEE27/Susan-B-Anthony.jpg"
+  },
+  {
+    "id": 'JBFqnCBsd6RMkjVDRZzb',
+    "name": "Mark Twain",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mark_Twain_by_AF_Bradley.jpg"
+  },
+  {
+    "id": 'JBFqnCBsd6RMkjVDRZzb',
+    "name": "Andrew Carnegie",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/andrew-carnegie-gettyimages-640453979.jpg"
+  }
+  
+], 
+themes: [
+  { name: 'Historical', backdrop_url: 'https://www.pbs.org/wgbh/americanexperience/media/filer_public_thumbnails/filer_public/21/8c/218cad7d-b020-4c39-bbf1-9d6d78a0e0cf/eleanor-fdr-bio-feature.jpg__2000x1621_q85_crop_subsampling-2_upscale.jpg' },
+  { name: 'Friends', backdrop_url: 'https://media.themoviedb.org/t/p/w1066_and_h600_bestv2/97l7Hwb8VWFsMEEqxvQoDDwAIML.jpg' },
+  { name: 'Sex and the City', backdrop_url: 'https://media.themoviedb.org/t/p/w1066_and_h600_bestv2/mXtL24G2Awyl3lKFtreMHnH5qFC.jpg' },
+  { name: 'Seinfeld', backdrop_url: 'https://media.themoviedb.org/t/p/w1066_and_h600_bestv2/tMRdEsMg9MyXAkcufK9YJEeIaNW.jpg' }
+] 
+    }
+}
+
+</script>

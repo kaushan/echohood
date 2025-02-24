@@ -1,0 +1,34 @@
+{
+  "titleTemplate": "What {{artist}} song are you?",
+  "general": {
+    "getStarted": "Get started",
+    "trending": "Trending",
+    "youAre": "You're the song",
+    "by": "by {{artist}}",
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days",
+    "allTime": "All the time",
+    "request": "Request",
+    "save": "Save",
+    "title": "Music quizzes",
+    "description": "Dive into the rhythm of self-discovery with our engaging music quizzes! Whether you’re a fan of soulful classics, pop sensations, or indie beats, there’s a quiz for everyone. Explore your musical identity and uncover which song by your favorite artist best represents you.",
+    "newsletter": {
+      "headline": "Stay in the Loop",
+      "description": "Get weekly updates on the latest quizzes, insights, and resources tailored just for you.",
+      "emailPlaceholder": "Email address",
+      "subscribe": "Subscribe",
+      "headlines": [
+        "Join our music quiz community and stay in the know.",
+        "Be part of a community that celebrates music and quizzes.",
+        "Subscribe to connect with others who share your love for music.",
+        "Get exclusive updates and join the music quiz conversation.",
+        "Stay connected with music lovers and discover new quizzes.",
+        "Join a space where music and quizzes bring people together.",
+        "Subscribe to be part of a growing community of music enthusiasts.",
+        "Be the first to know and connect with quiz-loving friends.",
+        "Join us to explore music quizzes and connect with like-minded fans.",
+        "Subscribe to join a welcoming space for music and quiz lovers."
+      ]
+    }
+  }
+}
